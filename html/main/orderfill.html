@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/orderfill.min.css">
+    <script type="text/javascript" src="../../js/lib/zepto.js"></script>
+    <script type="text/javascript" src="../../js/lib/touch.js"></script>
+    <script type="text/javascript" src="../../js/lib/root.js"></script>
+    <script type="text/javascript" src="../../js/lib/common.js"></script>
+    <title>中国青年旅行社</title>
+</head>
+<body>
+<div class="header_s">
+    <a href="../../dist/main/index.html"></a>
+    <h1>订单填写</h1>
+</div>
+<div class="title" id="title">
+    <div class="info">
+        <h5>都江堰套票</h5>
+        <p>门票+观光车</p>
+    </div>
+    <span class="add" id="add">添加游客类型</span>
+    <a href="javascript:;" class="bind">绑定游客</a>
+</div>
+<div class="box" id="box">
+    <ul>
+        <li class="tourist">
+            <span>游客类型</span><b>成人</b>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <span>出游日期</span><b>2015-09-09</b><i class="lefticon"></i>
+            </a>
+        </li>
+        <li class="time">
+            <span>演出时间</span><b>12：30</b><i></i>
+        </li>
+        <li>
+            <span>数量</span>
+            <div class="choose-num">
+                <a href="javascript:;" class="btn sub"></a>
+                <input type="text" class="num" value="0" text="0">
+                <a href="javascript:;" class="btn add"></a>
+            </div>
+        </li>
+    </ul>
+</div>
+<h3 class="qupiaoren">取票人信息（接收预订短信）</h3>
+<div class="box bottom">
+    <ul>
+        <li>
+            <span>姓名</span>
+            <input type="text" placeholder="需与证件类型上的姓名一致">
+        </li>
+        <li>
+            <span>手机</span>
+            <input type="text" placeholder="请输入11位手机号码">
+        </li>
+        <li class="certifi">
+            <span>证件类型</span><b>身份证</b><i></i>
+        </li>
+        <li>
+            <span>证件号码</span>
+            <input type="text" placeholder="证件号码">
+        </li>
+    </ul>
+</div>
+<div class="submit-box">
+    <span>总金额：￥198.00</span>
+    <a href="javascript:;" class="submit">提交订单</a>
+</div>
+<div class="zoom" id="zoom"></div>
+<div class="box1" id="box1">
+    <h3>请选择游客类型</h3>
+    <ul>
+        <li>成人</li>
+        <li>儿童</li>
+        <li>老人</li>
+        <li>70岁以上老人</li>
+        <li>退伍军人</li>
+        <li>残疾人</li>
+    </ul>
+</div>
+<div class="box1" id="box2">
+    <h3>请选演出时间</h3>
+    <ul>
+        <li>成人</li>
+        <li>儿童</li>
+        <li>老人</li>
+        <li>70岁以上老人</li>
+        <li>退伍军人</li>
+        <li>残疾人</li>
+        <li>成人</li>
+        <li>儿童</li>
+        <li>老人</li>
+        <li>70岁以上老人</li>
+        <li>退伍军人</li>
+        <li>残疾人</li>
+    </ul>
+</div>
+<div class="box1" id="box3">
+    <h3>请选择证件类型</h3>
+    <ul>
+        <li>成人</li>
+        <li>儿童</li>
+        <li>老人</li>
+        <li>70岁以上老人</li>
+        <li>退伍军人</li>
+        <li>残疾人</li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var oBody=$("body"),
+            oZoom=$("#zoom"),
+            oBox1=$("#box1"),
+            oBox2=$("#box2"),
+            oBox3=$("#box3");
+
+        $(".choose-num").numCalute();
+
+        oBody.find("#add").on("tap",function(){
+            oZoom.css({"display":"block"});
+            oBox1.css({"display":"block"});
+        });
+        oBody.find(".time").on("tap",function(){
+            oZoom.css({"display":"block"});
+            oBox2.css({"display":"block"});
+        });
+        oBody.find(".certifi").on("tap",function(){
+            oZoom.css({"display":"block"});
+            oBox3.css({"display":"block"});
+        });
+        oZoom.on("tap",function(){
+            oZoom.css({"display":"none"});
+            oBox3.css({"display":"none"});
+        });
+
+        oBox1.find("li").on("tap",function(){
+            var oDiv=$(".qupiaoren"),
+                oTem=$("#title").clone().removeAttr("id"),
+                oTar=$("#box").clone().removeAttr("id");
+            oTem.find("#add").remove();
+            oTem.css({"marginTop":0});
+            oTem.find(".info").css({"width":"12rem"})
+            oTar.find("input").val(0);
+            oTar.find(".tourist b").text($(this).text());
+            oTem.insertBefore(oDiv);
+            oTar.insertBefore(oDiv);
+            oZoom.css({"display":"none"});
+            oBox1.css({"display":"none"});
+            $(".choose-num").numCalute();
+        });
+
+        oBox2.find("li").on("tap",function(){
+            oBody.find(".time b").text($(this).text());
+            oZoom.css({"display":"none"});
+            oBox2.css({"display":"none"});
+        });
+
+        oBox3.find("li").on("tap",function(){
+            oBody.find(".certifi b").text($(this).text());
+            oZoom.css({"display":"none"});
+            oBox3.css({"display":"none"});
+        });
+
+    });
+</script>
+</body>
+</html>

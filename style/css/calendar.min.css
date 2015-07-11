@@ -1,0 +1,221 @@
+/*
+@ project:zhongtu
+@ date:2015-07-06
+*/
+body {
+  background-color: #fff;
+}
+.header_s span {
+  display: none;
+}
+.header_s span.special {
+  display: block;
+  background: none;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+  font-size: 16px;
+}
+.calendar-box {
+  margin-top: 2.4rem;
+  background-color: #fff;
+}
+.calendar-box h3 {
+  height: 1.8rem;
+  line-height: 1.8rem;
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+.calendar-box .calendar {
+  padding-bottom: 1rem;
+  height: 12.6rem;
+}
+.calendar-box .calendar .calendar_plugin .title {
+  background-color: #eee;
+  width: 16rem;
+  height: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.calendar-box .calendar .calendar_plugin .title .preMouth {
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.calendar-box .calendar .calendar_plugin .title .remotes {
+  width: 16rem;
+  height: 3rem;
+  float: left;
+}
+.calendar-box .calendar .calendar_plugin .title .remotes span.theday {
+  display: inline-block;
+  width: 16rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: .8rem;
+}
+.calendar-box .calendar .calendar_plugin .title .remotes .weeks {
+  position: relative;
+  overflow: hidden;
+  width: 15.4rem;
+  padding: 0 .3rem;
+}
+.calendar-box .calendar .calendar_plugin .title .remotes .weeks .weekDays {
+  float: left;
+  width: 2.2rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: .6rem;
+}
+.calendar-box .calendar .calendar_plugin .title .nextMouth {
+  width: 1rem;
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.calendar-box .calendar .calendar_plugin .cells {
+  padding: 0 .3rem;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con {
+  position: relative;
+  overflow: hidden;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con div {
+  float: left;
+  width: 2.2rem;
+  height: 1.6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con div span.past {
+  color: #c6c6c6;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con div span.asap {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  height: .6rem;
+  line-height: .6rem;
+  margin-top: .2rem;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con div span.price {
+  float: left;
+  color: #fc280e;
+  display: inline-block;
+  width: 100%;
+  height: .6rem;
+  font-size: .5rem;
+  line-height: .6rem;
+  margin-bottom: .2rem;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con div.icon {
+  background-color: #e95345;
+}
+.calendar-box .calendar .calendar_plugin .cells .calendar_con div.icon span {
+  color: #fff;
+}
+.calendar-box .chooseBox {
+  background-color: #f3f3f3;
+  height: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.calendar-box .chooseBox .choose-num {
+  float: left;
+  width: 7.5rem;
+  margin-left: .5rem;
+  position: relative;
+  overflow: hidden;
+}
+.calendar-box .chooseBox .choose-num span {
+  float: left;
+  display: inline-block;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.calendar-box .chooseBox .choose-num a {
+  float: left;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: .25rem .1rem;
+  background-color: #e95345;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.calendar-box .chooseBox .choose-num input.num {
+  float: left;
+  border: none;
+  background-color: #f3f3f3;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  margin-top: .2rem;
+  text-align: center;
+  background-image: url("../css/images/bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  font-size: .8rem;
+}
+.calendar-box .chooseBox .choose-num a.sub {
+  background-image: url("../css/images/sub1.png");
+}
+.calendar-box .chooseBox .choose-num a.add {
+  background-image: url("../css/images/add1.png");
+}
+.calendar-box .chooseBox .choose-num a.dissub {
+  background-image: url("../css/images/sub2.png");
+}
+.calendar-box .chooseBox .choose-num a.disadd {
+  background-image: url("../css/images/add2.png");
+}
+.order-now {
+  width: 16rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  background-color: #e95345;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.order-now span {
+  float: left;
+  display: inline-block;
+  width: 9.7rem;
+  color: #fff;
+  font-size: .8rem;
+  padding-left: 1rem;
+}
+.order-now span b {
+  font-weight: normal;
+}
+.order-now a {
+  float: left;
+  display: inline-block;
+  width: 5.3rem;
+  color: #fff;
+  text-align: center;
+  font-size: .8rem;
+  background-color: #de4839;
+}
+.zoom {
+  background: #fff;
+}
+.load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 3;
+  background: url("../css/images/loading1.gif") no-repeat center center;
+}

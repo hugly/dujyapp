@@ -1,0 +1,251 @@
+body{
+    position: relative;
+    z-index: 1;
+}
+.header_s h1{
+    width: 14rem;
+}
+.title{
+    margin-top: 2.4rem;
+    width: 15rem;
+    height: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0 .5rem;
+}
+.title .info{
+    float: left;
+    width: 7rem;
+    position: relative;
+    overflow: hidden;
+}
+.title .info h5{
+    float: left;
+    width: 100%;
+    font-size: .75rem;
+    line-height: 1.2rem;
+    margin-top: .2rem;
+}
+.title .info p{
+    float: left;
+    width: 100%;
+    font-size: .65rem;
+    line-height: 1rem;
+    color: #fc280e;
+}
+.add{
+    float: left;
+    width: 4rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: .5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #179251;
+    border-radius: 5px;
+}
+
+.bind{
+    float: left;
+    width: 3rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: .5rem 0;
+    text-align: center;
+    color: #fff;
+    background-color: #179251;
+    border-radius: 5px;
+}
+.box{
+    width: 16rem;
+    position: relative;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+.box ul{
+    width: 15rem;
+    padding: 0 .5rem;
+    position: relative;
+}
+.box ul li{
+    width: 15rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+    overflow: hidden;
+    font-size: .7rem;
+}
+.box ul li:last-child{
+    border-bottom: none;
+}
+.box ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.box ul li span{
+    float: left;
+    width: 4rem;
+    height: 1.5rem;
+}
+.box ul li b{
+    float: left;
+    width: 9rem;
+    height: 1.5rem;
+    text-align: right;
+    margin-right: .5rem;
+}
+.box ul li i{
+    float: left;
+    width: .8rem;
+    height: .5rem;
+    margin: .5rem .35rem;
+    background: url("images/jtx.png") no-repeat 0 0;
+    background-size: contain;
+}
+.box ul li i.lefticon{
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+.box ul li input{
+    float: left;
+    width: 10.5rem;
+    line-height: 1.5rem;
+    border: 1px solid #fff;
+}
+.choose-num {
+    float: right;
+    margin-left: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+choose-num span {
+    float: left;
+    display: inline-block;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.choose-num a.btn {
+    float: left;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .1rem;
+    background-color: #e95345;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.choose-num input.num {
+    float: left;
+    width: 3rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: .8rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.choose-num a.sub {
+    background-image: url("../css/images/sub1.png");
+}
+.choose-num a.add {
+    background-image: url("../css/images/add1.png");
+}
+.choose-num a.dissub {
+    background-image: url("../css/images/sub2.png");
+}
+.choose-num a.disadd {
+    background-image: url("../css/images/add2.png");
+}
+.qupiaoren{
+   width: 15rem;
+    height: 2rem;
+    padding: 0 .5rem;
+    line-height: 2rem;
+}
+.bottom{
+    margin-bottom: 3rem;
+}
+.submit-box{
+    width: 16rem;
+    height: 2.4rem;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: #e95345;
+    overflow: hidden;
+    font-size: .8rem;
+}
+.submit-box span{
+    float: left;
+    padding-left: .5rem;
+    width: 10.5rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    color: #fff;
+}
+.submit-box a{
+    float: left;
+    width: 5rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #fff;
+}
+.box1{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 6rem;
+    width: 15rem;
+    margin-left: -7.5rem;
+    z-index: 4;
+    font-size: .8rem;
+}
+.box1 h3{
+   width: 15rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: #179251;
+}
+.box1 ul{
+    position: relative;
+    background-color: #fff;
+    max-height: 8.5rem;
+    overflow-y: scroll;
+}
+.box1 ul li{
+    width: 14rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

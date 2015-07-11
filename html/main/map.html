@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../style/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/css/map.min.css">
+    <script type="text/javascript" src="../../js/lib/zepto.js"></script>
+    <script type="text/javascript" src="../../js/lib/touch.js"></script>
+    <script type="text/javascript" src="../../js/lib/root.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=1cdb5243765498b11610520ee25f53b3&v=1.0"></script>
+    <title>中国青年旅行社</title>
+</head>
+<body>
+<div class="header_s">
+    <a href="../../dist/main/index.html"></a>
+    <h1>地理位置</h1>
+</div>
+<div class="map" id="map"></div>
+<div class="info">
+    <div class="img"></div>
+    <p>四川省都江堰市公园路</p>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("map");
+    map.centerAndZoom(new BMap.Point(103.620123,31.006855), 15);
+
+    map.addControl(new BMap.ZoomControl());  //添加地图缩放控件
+    var marker1 = new BMap.Marker(new BMap.Point(103.619989,31.002254));  //创建标注
+    map.addOverlay(marker1);                 // 将标注添加到地图中
+    //创建信息窗口
+    var infoWindow1 = new BMap.InfoWindow("普通标注");
+    marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
+</script>

@@ -1,0 +1,8 @@
+
+.header_s h1{
+    width: 14rem;
+}
+.map{ width: 16rem; height: 24rem; }
+.info{ position: fixed; left: 0; bottom: .2rem; width: 14rem; padding: 0 1rem; height: 2rem; background-color: #fff; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2; overflow: hidden;}
+.info .img{ float: left; display: inline-block; width: .8rem; height: 1.2rem; margin: .4rem 0; background: url("images/location.png") no-repeat 0 0; background-size: contain; }
+.info p{ float: left; margin-left: .5rem; line-height: 2rem; color: #000; font-size: 16px;}

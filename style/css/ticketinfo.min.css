@@ -1,0 +1,360 @@
+.header_s h1{
+    width: 14rem;
+}
+.banner {
+    width: 16rem;
+    height: 9rem;
+    margin-top: 2.4rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+}
+.banner p {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    bottom: .5rem;
+    z-index: 3;
+    padding-left: 1rem;
+}
+.banner .ball {
+    display: inline-block;
+    background-color: #fff;
+    width: .4rem;
+    height: .4rem;
+    margin-left: .4rem;
+    border-radius: 50%;
+}
+.banner p span.active {
+    background-color: #e95345;
+}
+.banner ul {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.banner ul li {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    float: left;
+}
+.banner ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner ul li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner ul.islider-dot-wrap {
+    width: 80%;
+    height: 10%;
+    margin: 0px auto;
+    position: absolute;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10000;
+    text-align: center;
+}
+.banner ul li.islider-dot {
+    position: relative;
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    list-style-type: none;
+    margin: 0 0 0 .4rem;
+}
+.banner ul li.islider-dot.active {
+    background-color: #e95345;
+    border-color: #e95345;
+}
+.tab{
+    background-color: #fff;
+    height: 2.5rem;
+    width: 10rem;
+    padding: 0 3rem;
+    box-shadow: 0px 2px 2px #ccc;
+}
+.tab ul{
+    overflow: hidden;
+    position: relative;
+}
+.tab ul li{
+    float: left;
+    width: 4rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 .5rem;
+}
+.tab ul li a{
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: .2rem solid #fff;
+}
+.tab ul li.active a{
+    color: #179251;
+    border-bottom-color: #179251;
+}
+.news{
+    width: 16rem;
+    height: auto;
+    position: relative;
+    border-top: 1px solid #e2e2e2;
+    margin-top: .8rem;
+    background-color: #fff;
+}
+.news ul{
+    position: relative;
+}
+.news ul li{
+    width: 15rem;
+    padding: .5rem;
+    height: 4rem;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+    overflow: hidden;
+}
+.news ul li .left{
+    float: left;
+    width: 11.5rem;
+    height: 4rem;
+    margin-right: .5rem;
+    position: relative;
+    min-height: 1px;
+    zoom:1;
+}
+.news ul li .left:after{
+    content:"020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility:hidden
+}
+.news ul li .left a{
+    float: left;
+    display: inline-block;
+    color: #000;
+    width: 11.5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap:normal;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+.news ul li .left p{
+    float: left;
+    color: #fc280e;
+    width: 11.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap:normal;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+.news ul li .left .box{
+    float: left;
+    width: 11.5rem;
+    height: 1.8rem;
+    position: relative;
+    min-height: 1px;
+    zoom:1;
+}
+.box:after{
+    content:"020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility:hidden
+}
+.box span{
+    display: inline-block;
+    float: left;
+    height: 1.2rem;
+    width: 4rem;
+    background-color: #ee5b44;
+    text-align: center;
+    line-height: 1.2rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+.box b{
+    float: right;
+    font-size: .8rem;
+    color: #fc280e;
+}
+.box b i{
+    margin-left: .1rem;
+    color: #362e2b;
+}
+
+.news ul li .right{
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem 0;
+}
+.news ul li .right a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.news ul li .right a span{
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border: .1rem solid #ee5b44;
+    box-sizing: border-box;
+}
+.news ul li .right a span.top{
+    color: #ee5b44;
+    background-color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.news ul li .right a span.back{
+    color: #fff;
+    background-color: #ee5b44;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.zoom{
+    display: block;
+    z-index: 3;
+}
+.info-box{
+    display: none;
+    width: 14rem;
+    height: 20rem;
+    position: fixed;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    margin-top: -10rem;
+    margin-left: -7rem;
+    background-color: #fff;
+}
+.title{
+    width: 13rem;
+    height: 2rem;
+    background-color: #179251;
+    padding-left:1rem;
+    position: relative;
+    overflow: hidden;
+}
+.title h3{
+    float: left;
+    width: 11rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 1rem;
+}
+.title a{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    margin: .5rem 0 .5rem .5rem;
+    background: url("images/cancle.png") no-repeat 0 0;
+    background-size: contain;
+}
+.content{
+    width: 14rem;
+    height: 16rem;
+    overflow: hidden;
+}
+.content ul{
+    width: 13rem;
+    height: 16rem;
+    padding: 0 .5rem;
+    overflow-y: scroll;
+}
+.content ul li{
+    padding: .5rem 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+.content ul li span{
+    font-size: .8rem;
+    color: #000000;
+}
+.content ul li p{
+    color: #333333;
+}
+.foot-box{
+    width: 13rem;
+    height: 2rem;
+    padding: 0 .5rem;
+    background-color: #e2e2e2;
+    position: relative;
+    overflow: hidden;
+}
+.foot-box span{
+    font-size: .6rem;
+    float: left;
+    color: #e5340f;
+    width: 7rem;
+    height: 2rem;
+    line-height: 2rem;
+
+}
+.foot-box .online{
+    font-size: .6rem;
+    float: left;
+    color: #e5340f;
+    width: 3rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+.foot-box .order{
+    font-size: .6rem;
+    float: left;
+    width: 3rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    background-color: #e5340f;
+    color: #fff;
+    margin: .3rem 0;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
